@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的图书馆</title>
+		<link rel="stylesheet" type="text/css" href="css/my_library_z.css" />
+		<link rel="shortcut icon" type="image/x-icon" href=img/img1/xiaohui.ico/>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my_library_z.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<form action="" method="post" name="borrow">
+			<div class="img1_z">
+				<img src="img/img_z/bg_head.jpg" />
+			</div>
+			<div class="body_z">
+				<div class="house_z">
+					<div class="image1_z">
+						<!--<img src="img/img_z/bg_back.gif" />-->
+						<a href="index_w.html" style="padding-left: 30px;color: white;">返回首页</a>
+					</div>
+					<div class="image2_z">
+						<a href="xq_B.html" style="padding-left: 30px;color: white;">图书详情</a>
+						<!--<img src="img/img_z/bg_back.gif" />-->
+					</div>
+				</div>
+				<div class="body2_z">
+					<div class="top_z">
+						<h4>Library/2019/一月</h4>
+					</div>
+					<div class="bottom_z">
+						<div class="left_z">
+							<div class="searchtime" style="color: #75808e;">
+								我的图书馆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="denglu-l.html">登录</a>
+							</div>
+							<div style="margin-left: 40px;color: #75808e;">
+								<ul class="sidesort">
+									<li><a href="denglu-l.html">我的借阅</a></li>
+									<li><a href="denglu-l.html">我的预约</a></li>
+									<li><a href="denglu-l.html">我的续借</a></li>
+									<li><a href="denglu-l.html">我的书架</a></li>
+									<li><a href="denglu-l.html">修改资料</a></li>
+									<li><a href="denglu-l.html">修改密码</a></li>
+								</ul>
+							</div>
+							<h4 style="color:#5993b8;">>>>温馨提示:</h4>
+							<div class="notice">
+								<ol>
+									<li>读者进入我的图书馆以后， 可以 进行图书续借，预约，预借。</li>
+									<li>修改读者密码和基本资料。</li>
+									<li>查看评论、书架、预约、借阅权限。</li>
+									<li>可以进行图书推荐。</li>
+								</ol>
+							</div>
+						</div>
+
+						<div class="body_main_z">
+							<div class="body_main2_z">
+								<div class="top_search_z">
+								<div class="search_z">
+									请选择检索条件：
+									<select name="DropDownList1" id="DropDownList1" class="serachinfo">
+										<option value="name">书　名</option>
+										<option value="author">作　者</option>
+										<option value="classno">分类号</option>
+										<option value="isbn">ISBN</option>
+										<option value="callno">索书号</option>
+										<option value="subject">主题词</option>
+										<option value="publish">出版社</option>
+										<option selected="selected" value="text">任意词</option>
+									</select>
+									<input name="txtKeyWord" type="text" id="txtKeyWord" class="serachinfo" />
+									<input type="button" name="Button1" value="检  索" id="Button1" class="submit" />
+								</div>
+								<div>
+									<p><span>文献类型:</span> &nbsp;&nbsp;
+										<input id="All" type="radio" name="tabletype" value="RbntAll" /><label for="RbntAll">全部文献</label> &nbsp;&nbsp; <input id="RbntBook" class="item" name="tabletype" type="radio" value="RbntBook" /><label for="RbntBook">查询图书</label> &nbsp;&nbsp;
+										<input id="RbntSerise" class="item" type="radio" name="tabletype" value="RbntSerise" /><label for="RbntSerise">查询期刊</label>
+									</p>
+								</div>
+								<div>
+									<p>
+										<span>每页显示</span>
+										<select name="DropDownListPageNum" id="DropDownListPageNum" class="serachinfo" style="width:120px;">
+											<option selected="selected" value="10">10</option>
+											<option value="20">20</option>
+											<option value="50">50</option>
+
+										</select>
+									</p>
+								</div>
+								<div>
+									<p>
+										<span>排序选项</span>
+										<select name="DropDownListMatchType" id="DropDownListMatchType" class="serachinfo" style="width:120px;">
+											<option value="">匹配度</option>
+											<option value="pubyear">出版日期</option>
+											<option value="callno">索书号</option>
+											<option value="publish">出版社</option>
+
+										</select>
+									</p>
+								</div>
+								<div>
+									<p>
+										<span>排序方式</span>
+										<select name="DropDownList2" id="DropDownList2" class="serachinfo" style="width:120px;">
+											<option value="desc">降序排列</option>
+											<option selected="selected" value="asc">升序排列</option>
+
+										</select>
+									</p>
+								</div>
+								</div>
+								<div class="tuijian">
+									<h3 style="font-family: '微软雅黑';">热门图书推荐：</h3>
+									<table>
+										<tr>
+											<td><img src="img/img_z/tu6.jpg" alt="第一张图片"></td>
+											<td><img src="img/img_z/tu7.jpg" alt="第二张图片"></td>
+											<td><img src="img/img_z/tu4.jpg" alt="第三张图片"></td>
+										</tr>
+										<tr>
+											<td><img src="img/img_z/tu1.jpg" alt="第四张图片"></td>
+											<td><img src="img/img_z/tu2.jpg" alt="第五张图片"></td>
+											<td><img src="img/img_z/tu3.jpg" alt="第六张图片"></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="img2_z">
+					<img src="img/img_z/bg_foot.jpg" />
+				</div>
+		</form>
+
+	</body>
+
+</html>

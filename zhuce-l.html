@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/denglu-l.css" />
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/psd-l.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+.code 
+{
+ background:url(code_bg.jpg);
+ font-family:Arial;
+ font-style:italic;
+ color:blue;
+ font-size:24px;
+ border:0;
+ padding:2px 3px;
+ letter-spacing:3px;
+ font-weight:bolder;
+ cursor:pointer;
+ /*width:230px;*/
+ height:40px;
+ line-height:40px;
+ text-align:center;
+ vertical-align:middle;
+ position: relative;
+ margin-top:-10px;
+ /*margin: -20px 0px -60PX -150PX;*/
+ 
+	display:inline-block;
+}
+.yz-l a 
+{
+ text-decoration:none;
+ font-size:12px;
+ color:#288bc4;
+ float:none;
+}
+.yz-l a:hover 
+{
+ text-decoration:underline;
+}
+</style>
+<script type="text/javascript">
+var code;
+function createCode() 
+{
+ code = "";
+ var codeLength = 6; //验证码的长度
+ var checkCode = document.getElementById("checkCode");
+ var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+      'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+      'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); //所有候选组成验证码的字符，当然也可以用中文的
+ for(var i = 0; i < codeLength; i++) 
+ {
+  var charNum = Math.floor(Math.random() * 52);
+  code += codeChars[charNum];
+ }
+ if(checkCode) 
+ {
+  checkCode.className = "code";
+  checkCode.innerHTML = code;
+ }
+}
+function validateCode() 
+{
+ var Txtidcode=document.getElementById("Txtidcode").value;
+ if(Txtidcode.length <= 0) 
+ {
+  alert("请输入验证码！");
+ }
+ else if(Txtidcode.toUpperCase() != code.toUpperCase()) 
+ {
+   alert("验证码输入有误！");
+   createCode();
+ }
+ else 
+ {
+  alert("验证码正确！");
+ }    
+}  
+</script>
+	</head>
+
+	<body onload="createCode()">
+		<div class="header">
+			<img src="img/img1/logo.png" />&nbsp;
+			<img src="img/img1/tosyu.png" />
+		</div>
+		<div class="main-l">
+			<div class="loginbar-l">
+				<h1 style="color: #0066cc; margin-top: 40px;">中南大学图书管注册</h1>
+				<form action="login" method="post" onsubmit="validateCode()">
+					<div id="xuehao">
+						学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:<input class="wid-ll" type="text" id="userId" name="userId" placeholder="学号/工号">
+					</div>
+					<div id="xh-l">
+						
+					</div>
+					<div id="xm">
+						姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:<input class="wid-ll" type="text" id="user" name="userId" placeholder="输入姓名">
+					</div>
+					<div id="user-l">
+						
+					</div>
+					<div id="mima-l">
+						密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:<input class="wid-ll" type="password" id="password" name="password" placeholder="输入密码">
+					</div>
+					<div id="mm-l">
+						
+					</div>
+					<div>
+						确认密码:<input class="wid-ll" type="password" id="password" name="password" placeholder="再次输入密码">
+					</div>
+					<div class="yz-l"><input name="Txtidcode" class="yan" id="Txtidcode" type="text" placeholder="验证码">
+						<!--<span id="idcode">
+							<div class="ehong-idcode-val ehong-idcode-val5" id="ehong-code" onclick="$.idcode.setCode()" onfocus="return false" onblur="return false" oncontextmenu="return false" href="#"><font color="#90719b">9</font><font color="#90719b">i</font><font color="#6b486e">H</font><font color="#18975f">Z</font>
+					        </div>
+					<span class="ehong-code-val-tip" id="ehong-code-tip-ck" onclick="$.idcode.setCode()">
+				    </span>
+						</span>-->
+					<div class="code" id="checkCode" onclick="createCode()"></div>
+					<a href=" " onclick="createCode()">看不清换一张</a>
+					
+					</div>
+					<div class="dl-l">
+						<input class="wid360" id="zhuce-l" onclick="validateCode();" type="submit" value="注册" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			版权所有© 2017 中南大学图书馆 保留所有权利，联系电话：0731-88876717（图书馆网络资源部）0731-88877844（信息与网络中心）
+		</div>
+		<!--<script>
+			$.idcode.setCode(); //加载生成验证码方法
+			function loginSubmit() {
+				var IsBy = $.idcode.validateCode() //调用返回值，返回值结果为true或者false
+				if(!IsBy) {
+					document.getElementById("error").innerHTML = "验证码错误！";
+					return;
+				} else {
+					document.forms[0].submit();
+				}
+			}
+
+			function keyOnClick(e) {
+				var theEvent = window.event || e;
+				var code = theEvent.keyCode || theEvent.which;
+				if(code == 13) { //回车键的键值为13
+					loginSubmit(); //调用搜索事件
+				}
+			}
+		</script>-->
+	</body>
+
+</html>

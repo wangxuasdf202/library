@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>书目查询</title>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bjx.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/book.css" />
+	</head>
+
+	<body>
+		<div class="big_B">
+			<div class="header_B">
+				<img src="img/img_B/bg_head.jpg" />
+			</div>
+			<div class="mid_B">
+				<div class="midmain_B">
+					<div class="back">
+						<a class="bb" style="font-size: 14px;" href="index_w.html">返回检索首页</a>
+					</div>
+					<div class="mylogin">
+						<a class="ba" style="font-size: 14px;" href="denglu-l.html">我的图书馆登录</a>
+					</div>
+					<div class="simple_search">
+						<div class="search_B">
+							<select style="width: 90px;" name="list">
+								<option value="0" disabled="disabled" selected="selected">任意词</option>
+								<option value="1">书名</option>
+								<option value="1">作者</option>
+								<option value="1">分类号</option>
+								<option value="1">ISBN</option>
+								<option value="1">出版社</option>
+								<option value="1">任意词</option>
+							</select>
+							<input type="text" id="an2" style="width: 120px;" />
+							<input type="button"  id="an1" value="重新检索" />
+						</div>
+					</div>
+					<div class="body_B">
+						
+					
+					<div class="side">
+						<div class="range">
+							<h3 style="color:green; font-size: 17px;">缩小检索范围</h3>
+						</div>
+						<ul class="sidesort">
+							<li>
+								<strong style="color: cornflowerblue; font-size: 15px;">文献类型</strong>
+								<ul class="aa">
+									<li style="color:green; font-size: 13px;">中文图书(3567)</li>
+									<li style="color:green;font-size: 13px;">西文图书(7)</li>
+								</ul>
+							</li>
+							<li>
+								<strong style="color: cornflowerblue;font-size: 15px;">出版社</strong>
+								<ul class="ab">
+									<li style="color:green;font-size: 13px;">机械工业出版社(156)</li>
+									<li style="color:green;font-size: 13px;">电子工业出版社(105)</li>
+									<li style="color:green;font-size: 13px;">中国华侨出版社)(86)</li>
+									<li style="color:green;font-size: 13px;">中信出版社(73)</li>
+									<li style="color:green;font-size: 13px;">中国商业出版社(69)</li>
+									<li style="color:green;font-size: 13px;">清华大学出版社(64)</li>
+
+								</ul>
+							</li>
+							<li>
+								<strong style="color: cornflowerblue;font-size: 15px;">作者</strong>
+								<ul class="ac">
+									<li style="color:green;font-size: 13px;">(美) 奥里森·马登(31)</li>
+									<li style="color:green;font-size: 13px;">(美) 戴尔·卡耐基(25)</li>
+									<li style="color:green;font-size: 13px;">(美)卡耐基(12)</li>
+									<li style="color:green;font-size: 13px;">李志敏(12)</li>
+									<li style="color:green;font-size: 13px;">刘磊(11)</li>
+								</ul>
+							</li>
+							<li>
+								<strong style="color: cornflowerblue;font-size: 15px;">出版年</strong>
+								<ul class="ad">
+									<li style="color:green;font-size: 13px;">2005(337)</li>
+									<li style="color:green;font-size: 13px;">2009(267)</li>
+									<li style="color:green;font-size: 13px;">2006(220)</li>
+									<li style="color:green;font-size: 13px;">2008(208)</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="main">
+						<div class="xq1">
+							<a class="img_b" href="xq_B.html#li1_b"><img style="width: 100px;height: 150px;" src="img/img_B/book1.jpg" /></a>
+
+							<div class="jt1">
+								<h3 class="title_b">马太效应: 从成功走向成功的捷径:西武</h3>
+								<span class="author" style="font-size: 15px;">作者：<strong>西武</strong></span>
+								<span class="publisher" style="font-size: 15px;">出版社：<strong>机械工业出版社</strong></span>
+								<span class="time" style="font-size: 15px;">出版时间：<strong>2004</strong></span><br>
+								<span class="time" style="font-size: 15px;">ISBN：<strong>7-111-14088-5</strong></span><br>
+								<span class="time" style="font-size: 15px;">分类号：<strong>B848.4-49</strong></span>
+								<span class="time" style="font-size: 15px;">页数：<strong>239页</strong></span>
+								<span class="time" style="font-size: 15px;">价格：<strong>19.80</strong></span><br>
+								<span class="time" style="font-size: 15px;">复本数：<strong>3</strong></span>
+								<span class="time" style="font-size: 15px;">在馆数：<strong>3</strong></span><br>
+								<span class="time" style="font-size: 15px;">累借天数：<strong>1688</strong></span>
+								<span class="time" style="font-size: 15px;">累借次数：<strong>44</strong></span><br><br>
+								<a class="link_b" href="xq_B.html#li1_b">详细信息</a>
+							</div>
+						</div>
+						<br>
+						<div class="xq2">
+							<a class="img1_b" href="xq_B.html#li2_b"><img style="width: 100px;height: 150px;" src="img/img_B/book2.jpg" /></a>
+							<div class="jt2">
+								<h3 class="title_b">思考与成功:(美) 奥里森·马登</h3>
+								<span class="time" style="font-size: 15px;">作者：<strong>(美) 奥里森·马登</strong></span>
+								<span class="time" style="font-size: 15px;">出版社：<strong>中国档案出版社</strong></span>
+								<span class="time" style="font-size: 15px;">出版时间：<strong>2004</strong></span><br>
+								<span class="time" style="font-size: 15px;">ISBN：<strong>7-60166-022-6</strong></span><br>
+								<span class="time" style="font-size: 15px;">分类号：<strong>B848.4</strong></span>
+								<span class="time" style="font-size: 15px;">页数：<strong>298页</strong></span>
+								<span class="time" style="font-size: 15px;">价格：<strong>20.00</strong></span><br>
+								<span class="time" style="font-size: 15px;">复本数：<strong>3</strong></span>
+								<span class="time" style="font-size: 15px;">在馆数：<strong>3</strong></span><br>
+								<span class="time" style="font-size: 15px;">累借天数：<strong>2640</strong></span>
+								<span class="time" style="font-size: 15px;">累借次数：<strong>66</strong></span><br><br>
+								<a class="link1_b" href="xq_B.html#li2_b">详细信息</a>
+							</div>
+						</div>
+						<br><br>
+						<div class="xq3">
+							<a class="img2_b" href="xq_B.html#li3_b"><img style="width:100px;height:150px;" src="img/img_B/book3.jpg" /></a>
+
+							<div class="jt3">
+								<h3 class="title_b">成功心理:李树荫</h3>
+								<span class="time" style="font-size: 15px;">作者：<strong>李树荫</strong></span>
+								<span class="time" style="font-size: 15px;">出版社：<strong>知识出版社</strong></span>
+								<span class="time" style="font-size: 15px;">出版时间：<strong>1995</strong></span><br>
+								<span class="time" style="font-size: 15px;">ISBN：<strong>7-50156-1301-5</strong></span><br>
+								<span class="time" style="font-size: 15px;">分类号：<strong>B848.4</strong></span>
+								<span class="time" style="font-size: 15px;">页数：<strong>451页</strong></span>
+								<span class="time" style="font-size: 15px;">价格：<strong>16.00</strong></span><br>
+								<span class="time" style="font-size: 15px;">复本数：<strong>7</strong></span>
+								<span class="time" style="font-size: 15px;">在馆数：<strong>7</strong></span><br>
+								<span class="time" style="font-size: 15px;">累借天数：<strong>3750</strong></span>
+								<span class="time" style="font-size: 15px;">累借次数：<strong>94</strong></span><br><br>
+								<a class="link2_b" href="xq_B.html#li3_b">详细信息</a>
+							</div>
+						</div>	
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

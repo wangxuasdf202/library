@@ -1,0 +1,77 @@
+body{
+	width: 1200px;
+	margin: 0px auto;
+}
+.body_bj{
+	width: 870px;
+	border: 1px solid gainsboro;
+	border-radius: 10px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+
+.image1_b{
+	margin-left: 20px;
+	
+	background: url(../img/img_B/bg_logininfo.gif) no-repeat;
+	float: left;
+}
+.image1_b1{
+	text-decoration: none;
+}
+.image1_b1:link{
+	color: white;
+}
+.image1_b1:visited{
+	color: white;
+}
+.image2_b{
+	margin-right: 20px;
+	background: url(../img/img_B/bg_logininfo.gif) no-repeat;
+	float: right;
+}
+
+.image1_b2{
+	text-decoration: none;
+}
+.image1_b2:link{
+	color: white;
+}
+.image1_b2:visited{
+	color: white;
+}
+
+.body2_b{
+	margin-top: 130px;
+}
+.image1_bj{
+	margin-top: 70px;
+	margin-left: 40px;
+}
+.mainbody1_b{
+	margin-left: 240px;
+	margin-top: -285px;
+	margin-right: 30px;
+}
+
+
+.image2_bj{
+	margin-top: 70px;
+	margin-left: 40px;
+}
+.mainbody2_b{
+	margin-left: 240px;
+	margin-top: -280px;
+	margin-right: 30px;
+}
+
+.image3_bj{
+	margin-top: 70px;
+	margin-left: 40px;
+}
+.mainbody3_b{
+	margin-left: 240px;
+	margin-top: -280px;
+	margin-right: 30px;
+}
